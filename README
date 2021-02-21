@@ -1,0 +1,16 @@
+Pauna Cezar 334CB
+
+Am folosit ANTRL4 pentru parsarea expresiilor regulate. Gramatica folosita
+este destul de intuitiva. Intrucat or este cea mai putin "puternica" operatie
+o parsez prima oara. Ideea este sa am o expresie de forma:
+expr | expresie de concatenari, iar expresia de concatenari sa fie de forma
+atom | expresie de kleene star. Kleene star fiind cea mai puternica opertaie
+se parseaza ultima. Atom este o litera sau o expresie cu paranteze
+
+In continuare am definit clasa RegexEvalVisitor care imi evalueaza
+arborele generat de parser. Viziteaza arborele si in functie de tipul expresiei
+efectueaza operatia necesara. Se folosesc functii ajutatoare (functii care
+implementeaza operatiile necesare, ex: concatenarea a doua nfa-uri)
+Pentru operatii am urmarit cursul, nu este nimic complicat, se poate intelege
+din cod + comentarii.
+
